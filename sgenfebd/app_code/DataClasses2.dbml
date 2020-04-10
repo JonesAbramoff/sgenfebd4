@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="SGEDic_Loja" Class="DataClasses2DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=JONES-STI\SQLEXPRESS;Initial Catalog=SGEDic_Loja;Persist Security Info=True;User ID=sa" SettingsObjectName="sgenfebd.My.MySettings" SettingsPropertyName="SGEDic_LojaConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Empresas" Member="Empresas">
+    <Type Name="Empresa">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NomeReduzido" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="StringConexao" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="Inativa" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SQLServer" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DBOlap" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.GeraXML" Member="GeraXMLs">
+    <Type Name="GeraXML">
+      <Column Name="chNFe" Type="System.String" DbType="VarChar(44) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Versao" Member="Versaos">
+    <Type Name="Versao">
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Data" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Vigente" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Controle" Member="Controles">
+    <Type Name="Controle">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Conteudo" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

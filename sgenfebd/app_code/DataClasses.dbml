@@ -1,0 +1,1852 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="SGEDados1_Padrao_Oficial" Class="DataClassesDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=ASP22;Initial Catalog=SGEDados1_Padrao_Oficial;User ID=sa" SettingsObjectName="sgenfebd4.My.MySettings" SettingsPropertyName="SGEDados1_Padrao_OficialConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.TitulosPagTodos" Member="TitulosPagTodos">
+    <Type Name="TitulosPagTodo">
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Fornecedor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Filial" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SiglaDocumento" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="NumTitulo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataEmissao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Saldo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NumParcelas" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ValorTotal" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorSeguro" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorFrete" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="OutrasDespesas" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorProdutos" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorICMS" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorICMSSubst" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CreditoICMS" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ValorIPI" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CreditoIPI" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ValorIRRF" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PISRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CSLLRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorINSS" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="INSSRetido" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Observacao" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="FilialPedCompra" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumPedCompra" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataRegistro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CondicaoPagto" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Moeda" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TaxaMoeda" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Historico" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TitulosRecTodos" Member="TitulosRecTodos">
+    <Type Name="TitulosRecTodo">
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Cliente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Filial" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SiglaDocumento" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="NumTitulo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataEmissao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Saldo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NumParcelas" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Valor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorIRRF" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PISRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CSLLRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorISS" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISSRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PercJurosDiarios" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PercMulta" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Observacao" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ValorINSS" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="INSSRetido" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CondicaoPagto" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Moeda" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Ccl" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Natureza" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CpoGenerico1" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="ReajustePeriodicidade" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ReajusteBase" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="ReajustadoAte" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cidades" Member="Cidades">
+    <Type Name="Cidade">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="CodIBGE" Type="System.String" DbType="VarChar(7)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Clientes" Member="Clientes">
+    <Type Name="Cliente">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RazaoSocial" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="NomeReduzido" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Tipo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Observacao" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="LimiteCredito" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CondicaoPagto" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Desconto" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CodPadraoCobranca" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CodMensagem" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TabelaPreco" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumPagamentos" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProxCodFilial" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Transferido" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CodigoLoja" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FilialEmpresaLoja" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumIntDocLog" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="QuantLog" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Bloqueado" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="UsuarioCobrador" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Fornecedores" Member="Fornecedores">
+    <Type Name="Fornecedore">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="RazaoSocial" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="NomeReduzido" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Tipo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Observacao" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="CondicaoPagto" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Desconto" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ProxCodFilial" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ItensNFiscal" Member="ItensNFiscals">
+    <Type Name="ItensNFiscal">
+      <Column Name="NumIntNF" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Item" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Produto" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="UnidadeMed" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Quantidade" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Almoxarifado" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Ccl" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ContaContabil" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PrecoUnitario" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PercDesc" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorDesconto" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DataEntrega" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DescricaoItem" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="ValorAbatComissao" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NumIntPedVenda" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumIntItemPedVenda" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumIntTrib" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumIntDocOrig" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PrecoUnitarioMoeda" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TiposTribICMS" Member="TiposTribICMs">
+    <Type Name="TiposTribICM">
+      <Column Name="Tipo" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PermiteAliquota" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PermiteMargLucro" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PermiteReducaoBase" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ColunaNoLivroEntrada" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ColunaNoLivroSaida" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoTribCST" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SituacaoTribECF" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TiposTribIPI" Member="TiposTribIPIs">
+    <Type Name="TiposTribIPI">
+      <Column Name="Tipo" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="PermiteAliquota" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PermiteReducaoBase" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ColunaNoLivro" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CSTEntrada" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CSTSaida" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TributacaoNF" Member="TributacaoNFs">
+    <Type Name="TributacaoNF">
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NaturezaOpInterna" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="TipoTributacao" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IPIBase" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IPIValor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IPICredito" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSBase" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSValor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSSubstBase" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSSubstValor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSCredito" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISSIncluso" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ISSBase" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISSAliquota" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISSValor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IRRFBase" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IRRFAliquota" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IRRFValor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorINSS" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="INSSRetido" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="INSSValorBase" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="INSSValorDeducoes" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PISCredito" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="COFINSCredito" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PISRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CSLLRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ParcelasPagTodas" Member="ParcelasPagTodas">
+    <Type Name="ParcelasPagToda">
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumIntTitulo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumParcela" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DataVencimento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DataVencimentoReal" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Saldo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Valor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="TipoCobranca" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Portador" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="BancoCobrador" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ProxSeqBaixa" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NossoNumero" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CodigoDeBarras" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ParcelasRecTodas" Member="ParcelasRecTodas">
+    <Type Name="ParcelasRecToda">
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="NumIntTitulo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumParcela" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DataVencimento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DataVencimentoReal" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Valor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Cobrador" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CarteiraCobranca" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumTitCobrador" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ProxSeqBaixa" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ProxSeqOcorr" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Desconto1Codigo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Desconto1Ate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Desconto1Valor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Desconto2Codigo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Desconto2Ate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Desconto2Valor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Desconto3Codigo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Desconto3Ate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Desconto3Valor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Aceite" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Saldo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorOriginal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Observacao" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Previsao" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FATConfig" Member="FATConfigs">
+    <Type Name="FATConfig">
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Tipo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Conteudo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ConteudoInicial" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NFeFedRetEnvi" Member="NFeFedRetEnvis">
+    <Type Name="NFeFedRetEnvi">
+      <Column Name="tpAmb" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="verAplic" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="versao" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="cStat" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="xMotivo" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="cUF" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="nRec" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="dhRecbto" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="tMed" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NFeFedRetConsReci" Member="NFeFedRetConsRecis">
+    <Type Name="NFeFedRetConsReci">
+      <Column Name="versao" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="tpAmb" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="verAplic" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="nRec" Type="System.String" DbType="VarChar(15) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="cStat" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="xMotivo" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="cUF" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NFeFedLoteLog" Member="NFeFedLoteLogs">
+    <Type Name="NFeFedLoteLog">
+      <Column Name="Lote" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Data" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Hora" Type="System.Double" DbType="Float NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="status" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="NumIntNF" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NFeFedProtNFe" Member="NFeFedProtNFes">
+    <Type Name="NFeFedProtNFe">
+      <Column Name="versao" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="nRec" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="tpAmb" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="verAplic" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="chNFe" Type="System.String" DbType="VarChar(44) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="data" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="nProt" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="cStat" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="xMotivo" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="NumIntNF" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="hora" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="DataRegistro" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="HoraRegistro" Type="System.Double" DbType="Float NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TributacaoItemNF" Member="TributacaoItemNFs">
+    <Type Name="TributacaoItemNF">
+      <Column Name="NumIntNF" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Item" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NaturezaOp" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="TipoTributacao" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IPITipo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IPICodProduto" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="IPIBaseCalculo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IPIPercRedBase" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IPIAliquota" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IPIValor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IPICredito" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSTipo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ICMSBase" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSPercRedBase" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSAliquota" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSValor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSCredito" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSSubstBase" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSSubstAliquota" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSSubstValor" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PISCredito" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="COFINSCredito" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSAliquotaAdicaoDI" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DespImpICMSBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DespImpICMSValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DespImpICMSCredito" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstPercRedBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstPercMVA" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TiposDeTributacaoMovto" Member="TiposDeTributacaoMovtos">
+    <Type Name="TiposDeTributacaoMovto">
+      <Column Name="Tipo" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Entrada" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ICMSIncide" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ICMSTipo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ICMSBaseComIPI" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ICMSCredita" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IPIIncide" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IPITipo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IPIFrete" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IPIDestaca" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IPICredita" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ISSIncide" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IRIncide" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Compra" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IRAliquota" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="INSSIncide" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="INSSRetencaoMinima" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="INSSAliquota" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PISCredita" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PISRetencao" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSCredita" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSRetencao" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CSLLRetencao" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSRetencao" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ProdutoCategoria" Member="ProdutoCategorias">
+    <Type Name="ProdutoCategoria">
+      <Column Name="Produto" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Categoria" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Item" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CategoriaProdutoItem" Member="CategoriaProdutoItems">
+    <Type Name="CategoriaProdutoItem">
+      <Column Name="Categoria" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Item" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Ordem" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Valor1" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Valor2" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Valor3" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Valor4" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Valor5" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Valor6" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Valor7" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Valor8" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CamposGenericosValores" Member="CamposGenericosValores">
+    <Type Name="CamposGenericosValore">
+      <Column Name="CodCampo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CodValor" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Padrao" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Valor" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Complemento1" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Complemento2" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Complemento3" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Complemento4" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Complemento5" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ItemAdicaoDIItemNF" Member="ItemAdicaoDIItemNFs">
+    <Type Name="ItemAdicaoDIItemNF">
+      <Column Name="NumIntItemNF" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntItemAdicaoDI" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ValorAduaneiro" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorII" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DespImpValorRateado" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ItensAdicaoDI" Member="ItensAdicaoDIs">
+    <Type Name="ItensAdicaoDI">
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntAdicaoDI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Seq" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Produto" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="UM" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="Quantidade" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorUnitFOBNaMoeda" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorUnitFOBEmReal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorUnitCIFNaMoeda" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorUnitCIFEmReal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorTotalFOBNaMoeda" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorTotalFOBEmReal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorTotalCIFNaMoeda" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorTotalCIFEmReal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PesoBruto" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PesoLiq" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TotalCIFEmRealManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ISSQN" Member="ISSQNs">
+    <Type Name="ISSQN">
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Tipo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CodServNFe" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CNAE" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="CListServ" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="CListServNFe" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DASAliquotas" Member="DASAliquotas">
+    <Type Name="DASAliquota">
+      <Column Name="Ano" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Mes" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="AliquotaICMS" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="AliquotaTotal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AdmConfig" Member="AdmConfigs">
+    <Type Name="AdmConfig">
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Tipo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Conteudo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ConteudoInicial" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MensagensRegra" Member="MensagensRegras">
+    <Type Name="MensagensRegra">
+      <Column Name="TipoDoc" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Seq" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Mensagem" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="TipoMsg" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ContribuinteSubstituto" Member="ContribuinteSubstitutos">
+    <Type Name="ContribuinteSubstituto">
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UF" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="InscricaoEstadual" Type="System.String" DbType="VarChar(18) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Enderecos" Member="Enderecos">
+    <Type Name="Endereco">
+      <Column Name="Codigo" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Endereco" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="Bairro" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Cidade" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="SiglaEstado" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="CodigoPais" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CEP" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="Telefone1" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="Telefone2" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="Email" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Fax" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="Contato" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Referencia" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Logradouro" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Complemento" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="TipoLogradouro" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Email2" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Numero" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="TelDDD1" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TelDDD2" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="FaxDDD" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TelNumero1" Type="System.String" DbType="VarChar(18) NOT NULL" CanBeNull="false" />
+      <Column Name="TelNumero2" Type="System.String" DbType="VarChar(18) NOT NULL" CanBeNull="false" />
+      <Column Name="FaxNumero" Type="System.String" DbType="VarChar(18) NOT NULL" CanBeNull="false" />
+      <Column Name="CGC" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Transportadoras" Member="Transportadoras">
+    <Type Name="Transportadora">
+      <Column Name="Codigo" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NomeReduzido" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CGC" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="InscricaoEstadual" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="InscricaoMunicipal" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="Endereco" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ViaTransporte" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Guia" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="PesoMinimo" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Observacao" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="CodExterno" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IEIsento" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NFeFedDenegada" Member="NFeFedDenegadas">
+    <Type Name="NFeFedDenegada">
+      <Column Name="NumIntNF" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Processada" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NaturezaOp" Member="NaturezaOps">
+    <Type Name="NaturezaOp">
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="DescrNF" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="grupodipj2324" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="grupodipj2527" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="grupodipj2628" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="grupodipj3031" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="grupodipj3234" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="grupodipj3335" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="codnfe" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="codnfe_112" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="codnfe_20" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RetiradaEntrega" Member="RetiradaEntregas">
+    <Type Name="RetiradaEntrega">
+      <Column Name="TipoDoc" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="EnderecoRet" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="EnderecoEnt" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CNPJCPFRet" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="CNPJCPFEnt" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="ClienteRet" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FornecedorRet" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FilialCliRet" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="FilialFornRet" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ClienteEnt" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FornecedorEnt" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FilialCliEnt" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="FilialFornEnt" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InfoAdicCompra" Member="InfoAdicCompras">
+    <Type Name="InfoAdicCompra">
+      <Column Name="TipoDoc" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NotaEmpenho" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Pedido" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Contrato" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InfoAdicExportacao" Member="InfoAdicExportacaos">
+    <Type Name="InfoAdicExportacao">
+      <Column Name="TipoDoc" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="UFEmbarque" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="LocalEmbarque" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NFeFedScan" Member="NFeFedScans">
+    <Type Name="NFeFedScan">
+      <Column Name="Ocorrencia" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataEntrada" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="HoraEntrada" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DataSaida" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="HoraSaida" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Justificativa" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CRFatConfig" Member="CRFatConfigs">
+    <Type Name="CRFatConfig">
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(150)" CanBeNull="true" />
+      <Column Name="Tipo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Conteudo" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ConteudoInicial" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InfoAdicDocItem" Member="InfoAdicDocItems">
+    <Type Name="InfoAdicDocItem">
+      <Column Name="TipoDoc" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntDocItem" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DataLimiteFaturamento" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="NumPedidoCompra" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="ItemPedCompra" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IncluiValorTotal" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Msg" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NFeFedRetCancNFe" Member="NFeFedRetCancNFes">
+    <Type Name="NFeFedRetCancNFe">
+      <Column Name="versao" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="tpAmb" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="verAplic" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="cStat" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="xMotivo" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="cUF" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="chNFe" Type="System.String" DbType="VarChar(44) NOT NULL" CanBeNull="false" />
+      <Column Name="data" Type="System.DateTime" DbType="DateTime NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="nProt" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="NumIntNF" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="hora" Type="System.Double" DbType="Float NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Cce" Member="Cces">
+    <Type Name="Cce">
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Correcao" Type="System.String" DbType="VarChar(1000) NOT NULL" CanBeNull="false" />
+      <Column Name="chNFe" Type="System.String" DbType="VarChar(44) NOT NULL" CanBeNull="false" />
+      <Column Name="nSeqEvento" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NFeFedLoteCce" Member="NFeFedLoteCces">
+    <Type Name="NFeFedLoteCce">
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="idLote" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntCce" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NFeFedRetEnvCCe" Member="NFeFedRetEnvCCes">
+    <Type Name="NFeFedRetEnvCCe">
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="versao" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="idLote" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tpAmb" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="verAplic" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="cOrgao" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="xMotivo" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Id" Type="System.String" DbType="VarChar(17) NOT NULL" CanBeNull="false" />
+      <Column Name="tpAmb1" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="verAplic1" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="cOrgao1" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="cStat1" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="xMotivo1" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="chNFe" Type="System.String" DbType="VarChar(44) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tpEvento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xEvento" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="nSeqEvento" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CPFCNPJ" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="dataRegEvento" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="horaRegEvento" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="nProt" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="cStat" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="NumIntNF" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.MovimentoEstoque" Member="MovimentoEstoques">
+    <Type Name="MovimentoEstoque">
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Custo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Apropriacao" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Produto" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="SiglaUM" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Quantidade" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Almoxarifado" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoMov" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumIntDocOrigem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TipoNumIntDocOrigem" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Data" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Ccl" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="NumIntDocEst" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Cliente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Fornecedor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodigoOP" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="DocOrigem" Type="System.String" DbType="VarChar(25)" CanBeNull="true" />
+      <Column Name="ContaContabilEst" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ContaContabilAplic" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="HorasMaquina" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="DataInicioProducao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DataRegistro" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Hora" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NumIntDocGrade" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QuantInsumos" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ItemNF" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Observacao" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Requisitante" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Usuario" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="Item" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="FilialCli" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="FilialForn" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ItensNFiscalGrade" Member="ItensNFiscalGrades">
+    <Type Name="ItensNFiscalGrade">
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntItemNF" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Produto" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Quantidade" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NumIntItemPVGrade" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Almoxarifado" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RastreamentoMovto" Member="RastreamentoMovtos">
+    <Type Name="RastreamentoMovto">
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntDocLote" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TipoDocOrigem" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumIntDocOrigem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Produto" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Quantidade" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="SiglaUM" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="QuantidadeFaixaSerie" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="NumIntDocLoteSerieIni" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RastreamentoLote" Member="RastreamentoLotes">
+    <Type Name="RastreamentoLote">
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Produto" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Lote" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="FilialOP" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Status" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DataValidade" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DataEntrada" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DataFabricacao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Observacao" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Localizacao" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Cliente" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FilialCli" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.RastroEstIni" Member="RastroEstInis">
+    <Type Name="RastroEstIni">
+      <Column Name="Produto" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Almoxarifado" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Escaninho" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntDocLote" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Quantidade" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Paises" Member="Paises">
+    <Type Name="Paise">
+      <Column Name="Codigo" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CodBacen" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NFeFedRetEnvEventoCanc" Member="NFeFedRetEnvEventoCancs">
+    <Type Name="NFeFedRetEnvEventoCanc">
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="versao" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="idLote" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="tpAmb" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="verAplic" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="cOrgao" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="xMotivo" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="Id" Type="System.String" DbType="VarChar(17) NOT NULL" CanBeNull="false" />
+      <Column Name="tpAmb1" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="verAplic1" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="cOrgao1" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="cStat1" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="xMotivo1" Type="System.String" DbType="VarChar(255) NOT NULL" CanBeNull="false" />
+      <Column Name="chNFe" Type="System.String" DbType="VarChar(44) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="tpEvento" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="xEvento" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="nSeqEvento" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CPFCNPJ" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="email" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="dataRegEvento" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="horaRegEvento" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="nProt" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="cStat" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="NumIntNF" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Estados" Member="Estados">
+    <Type Name="Estado">
+      <Column Name="Sigla" Type="System.String" DbType="VarChar(2) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="ICMSAliquotaInterna" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSAliquotaExportacao" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ICMSAliquotaImportacao" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CodIBGE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSProt21Ini" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="ICMSProt21Fim" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="indSinc" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NFiscal" Member="NFiscals">
+    <Type Name="NFiscal">
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Serie" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="NumNotaFiscal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Cliente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FilialCli" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FilialEntrega" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Fornecedor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FilialForn" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DataEmissao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DataEntrada" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DataSaida" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DataVencimento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DataReferencia" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FilialPedido" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumPedidoVenda" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumPedidoTerc" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ClasseDocCPR" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumIntDocCPR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ValorTotal" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorProdutos" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorFrete" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorSeguro" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorOutrasDespesas" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorDesconto" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CodTransportadora" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="MensagemNota" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="TabelaPreco" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoNFiscal" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NaturezaOp" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="PesoLiq" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PesoBruto" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NumIntTrib" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Placa" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PlacaUF" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="VolumeQuant" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VolumeEspecie" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VolumeMarca" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VolumeNumero" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Canal" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumIntNotaOriginal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ClienteBenef" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FilialCliBenef" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FornecedorBenef" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FilialFornBenef" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FreteRespons" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumRecebimento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Observacao" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="CodUsuarioCancel" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="MotivoCancel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HoraEntrada" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HoraSaida" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="OrigemNF" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DestinoNF" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ValorContainer" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorMercadoria" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DataAtualizacao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CodTranspRedesp" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="DetPagFrete" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="SemDataSaida" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="VolumeTotal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Moeda" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TaxaMoeda" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="MensagemCorpoNota" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Natureza" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="NaoImpCobranca" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="RPS" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="NumNFe" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodVerificacaoNFe" Type="System.String" DbType="VarChar(8) NOT NULL" CanBeNull="false" />
+      <Column Name="NFe" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ValorDescontoTit" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorDescontoItens" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorItens" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="FornEntTerc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FilialFornEntTerc" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ChvNFe" Type="System.String" DbType="VarChar(44) NOT NULL" CanBeNull="false" />
+      <Column Name="DataCancel" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DataRegCancel" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="HoraRegCancel" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="HoraEmissao" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="HoraCadastro" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="UsuCadastro" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NFeFedLote" Member="NFeFedLotes">
+    <Type Name="NFeFedLote">
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Lote" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntNF" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Data" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Hora" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Usuario" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SistemaContingencia" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FiliaisFornecedores" Member="FiliaisFornecedores">
+    <Type Name="FiliaisFornecedore">
+      <Column Name="CodFornecedor" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CodFilial" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="Endereco" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CGC" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="InscricaoEstadual" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="InscricaoMunicipal" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="ContaContabil" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Banco" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Agencia" Type="System.String" DbType="VarChar(7)" CanBeNull="true" />
+      <Column Name="ContaCorrente" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="Observacao" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="TipoFrete" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ContaFornConsig" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="InscricaoINSS" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="TipoCobranca" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="GeraCredICMS" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ContaDespesa" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="InscricaoSuframa" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="RegimeTributario" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IEIsento" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IENaoContrib" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IdEstrangeiro" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FiliaisClientes" Member="FiliaisClientes">
+    <Type Name="FiliaisCliente">
+      <Column Name="CodCliente" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CodFilial" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CGC" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="InscricaoEstadual" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="InscricaoMunicipal" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="Endereco" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EnderecoEntrega" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EnderecoCobranca" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodTransportadora" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Observacao" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="ContaContabil" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Vendedor" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ComissaoVendas" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Regiao" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FreqVisitas" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DataUltVisita" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CodCobrador" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ICMSBaseCalculoComIPI" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Revendedor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="TipoFrete" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="InscricaoSuframa" Type="System.String" DbType="VarChar(9)" CanBeNull="true" />
+      <Column Name="RG" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="CodClienteLoja" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="CodFilialLoja" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FilialEmpresaLoja" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumIntDocLog" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="QuantLog" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CodTranspRedesp" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="DetPagFrete" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Guia" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Transferido" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CodMensagem" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="DataUltAtualizacao" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="Exportado" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CodExterno" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="RegimeTributario" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IEIsento" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IENaoContrib" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IdEstrangeiro" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ImportCompl" Member="ImportCompls">
+    <Type Name="ImportCompl">
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TipoDocOrigem" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="NumIntDocOrigem" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Seq" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Tipo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="ValorBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Aliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Valor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Manual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Perc" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Dias" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.DIInfo" Member="DIInfos">
+    <Type Name="DIInfo">
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Numero" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Data" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="FornTrading" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FilialFornTrading" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ProcessoTrading" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="Moeda" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TaxaMoeda" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PesoBrutoKG" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PesoLiqKG" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorMercadoriaMoeda" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorFreteInternacMoeda" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorSeguroInternacMoeda" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorMercadoriaEmReal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorFreteInternacEmReal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorSeguroInternacEmReal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IIValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IPIValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorDespesas" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Moeda2" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TaxaMoeda2" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DataDesembaraco" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UFDesembaraco" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="LocalDesembaraco" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="MoedaMercadoria" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="MoedaFrete" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="MoedaSeguro" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="MoedaItens" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CodExportador" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="ViaTransp" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Intermedio" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CNPJAdquir" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="UFAdquir" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.AdicaoDI" Member="AdicaoDIs">
+    <Type Name="AdicaoDI">
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntDI" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Seq" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPICodigo" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="IIAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IPIAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IIValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IPIValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IPIBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorAduaneiro" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DespesaAduaneira" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TaxaSiscomex" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CodFabricante" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSPercRedBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="NumDrawback" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InfoAdicDocItemDetExport" Member="InfoAdicDocItemDetExports">
+    <Type Name="InfoAdicDocItemDetExport">
+      <Column Name="TipoDoc" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntDocItem" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Seq" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumDrawback" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="NumRegistExport" Type="System.String" DbType="VarChar(12) NOT NULL" CanBeNull="false" />
+      <Column Name="ChvNFe" Type="System.String" DbType="VarChar(44) NOT NULL" CanBeNull="false" />
+      <Column Name="QuantExport" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.InfoAdicDocAutoXml" Member="InfoAdicDocAutoXmls">
+    <Type Name="InfoAdicDocAutoXml">
+      <Column Name="TipoDoc" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Seq" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tipo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Doc" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.FiliaisEmpresa" Member="FiliaisEmpresas">
+    <Type Name="FiliaisEmpresa">
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Nome" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CGC" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="Endereco" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="EnderecoEntrega" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="AlmoxarifadoPadrao" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="InscricaoEstadual" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="ICMSPorEstimativa" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="InscricaoMunicipal" Type="System.String" DbType="VarChar(18)" CanBeNull="true" />
+      <Column Name="ISSPercPadrao" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISSCodigoPadrao" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="ISSIncluso" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ContribuinteIPI" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IRPercPadrao" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="RamoEmpresa" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="Jucerja" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataJucerja" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="Contador" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="CRCContador" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="CPFContador" Type="System.String" DbType="VarChar(14)" CanBeNull="true" />
+      <Column Name="TipoTribAtividade" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SimplesFederal" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="SimplesFederalAliq" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="SimplesFederalTeto" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="SuperSimples" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISNaoCumulativo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSNaoCumulativo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="LucroPresumido" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CertificadoA1A3" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="NFeAmbiente" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CNAE" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SignatarioCTB" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="CodQualiSigCTb" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="CPFSignatarioCTB" Type="System.String" DbType="VarChar(11) NOT NULL" CanBeNull="false" />
+      <Column Name="SpedFiscalPerfil" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="NomeReduzido" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="EnderecoContador" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CNPJContador" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="RPSAmbiente" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="RegimeEspecialTrib" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="RPSEletronica" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PisCofinsRegCumTipo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ContribPrevPorRecBruta" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="AliquotaPadraoContribPrev" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PisCofinsIndAproCred" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="NFCECSC" Type="System.String" DbType="VarChar(36) NOT NULL" CanBeNull="false" />
+      <Column Name="idNFCECSC" Type="System.String" DbType="VarChar(6) NOT NULL" CanBeNull="false" />
+      <Column Name="indSincPadrao" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="RegimeTrib" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TiposDocInfo" Member="TiposDocInfos">
+    <Type Name="TiposDocInfo">
+      <Column Name="Sigla" Type="System.String" DbType="VarChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="TipoMovtoEstoque" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoMovtoEstoque2" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoMovtoEstoqueConsig" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoMovtoEstoqueConsig2" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoMovtoEstoqueBenef" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoMovtoEstoqueBenef2" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoDocCPR" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="NaturezaOperacaoPadrao" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="InfoContabilizacao" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NomeReduzido" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="NomeTelaNFiscal" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TituloTelaNFiscal" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Faturavel" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Comissao" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Emitente" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Destinatario" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Origem" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Complementar" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Tipo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SiglaNFOriginal" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Faturamento" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ModeloArqICMS" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Padrao" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NatOpExtPadrao" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="NFFatura" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoOperacaoTrib" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SubtipoContabil" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Rastreavel" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Compras" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="EscaninhoRastro" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ModDocFis" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ModDocFisE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="FinalidadeNFe" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IndConsumidorFinal" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IndPresenca" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Serie" Member="Series">
+    <Type Name="Serie">
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Serie" Type="System.String" DbType="VarChar(9) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="ProxNumNFiscal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProxNumNFiscalEntrada" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ProxNumNFiscalImpressa" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="LockImpressao" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Imprimindo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoFormulario" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ProxNumRomaneio" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NomeTsk" Type="System.String" DbType="VarChar(8)" CanBeNull="true" />
+      <Column Name="MaxLinhasNF" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Eletronica" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ModDocFis" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NFeNFiscal" Member="NFeNFiscal">
+    <Type Name="NFeNFiscal">
+      <Column Name="DescrNF" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Sigla" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(60)" CanBeNull="true" />
+      <Column Name="TipoMovtoEstoque" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoMovtoEstoque2" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoMovtoEstoqueConsig" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoMovtoEstoqueConsig2" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoMovtoEstoqueBenef" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoMovtoEstoqueBenef2" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoDocCPR" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="NaturezaOperacaoPadrao" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="InfoContabilizacao" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Codigo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NomeReduzido" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="NomeTelaNFiscal" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="TituloTelaNFiscal" Type="System.String" DbType="VarChar(100)" CanBeNull="true" />
+      <Column Name="Faturavel" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Comissao" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Emitente" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Destinatario" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Origem" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Complementar" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Tipo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SiglaNFOriginal" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="Faturamento" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ModeloArqICMS" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Padrao" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NatOpExtPadrao" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="NFFatura" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoOperacaoTrib" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SubtipoContabil" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Rastreavel" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Compras" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="EscaninhoRastro" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ModDocFisE" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Status" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Serie" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="NumNotaFiscal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Cliente" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FilialCli" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FilialEntrega" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Fornecedor" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FilialForn" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DataEmissao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DataEntrada" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DataSaida" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DataVencimento" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="DataReferencia" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="FilialPedido" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumPedidoVenda" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="NumPedidoTerc" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ClasseDocCPR" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumIntDocCPR" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ValorTotal" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorProdutos" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorFrete" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorSeguro" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorOutrasDespesas" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorDesconto" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="CodTransportadora" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="MensagemNota" Type="System.String" DbType="VarChar(250)" CanBeNull="true" />
+      <Column Name="TabelaPreco" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TipoNFiscal" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NaturezaOp" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="PesoLiq" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PesoBruto" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NumIntTrib" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Placa" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="PlacaUF" Type="System.String" DbType="VarChar(2)" CanBeNull="true" />
+      <Column Name="VolumeQuant" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="VolumeEspecie" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VolumeMarca" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="VolumeNumero" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Canal" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumIntNotaOriginal" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="ClienteBenef" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FilialCliBenef" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FornecedorBenef" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="FilialFornBenef" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FreteRespons" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumRecebimento" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="Observacao" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="CodUsuarioCancel" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="MotivoCancel" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="HoraEntrada" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="HoraSaida" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="OrigemNF" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="DestinoNF" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="ValorContainer" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ValorMercadoria" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="DataAtualizacao" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="CodTranspRedesp" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="DetPagFrete" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="SemDataSaida" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="VolumeTotal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Moeda" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TaxaMoeda" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="MensagemCorpoNota" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="Natureza" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="NaoImpCobranca" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="RPS" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="NumNFe" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="CodVerificacaoNFe" Type="System.String" DbType="VarChar(24) NOT NULL" CanBeNull="false" />
+      <Column Name="NFe" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ValorDescontoTit" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorDescontoItens" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorItens" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="FornEntTerc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FilialFornEntTerc" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ChvNFe" Type="System.String" DbType="VarChar(44) NOT NULL" CanBeNull="false" />
+      <Column Name="DataCancel" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DataRegCancel" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="HoraRegCancel" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="HoraEmissao" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DataCadastro" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="HoraCadastro" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="UsuCadastro" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="CliIntermediario" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="FilialCliIntermediario" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="SerieNFPOrig" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="NumNFPOrig" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.NFePadraoAutXml" Member="NFePadraoAutXml">
+    <Type Name="NFePadraoAutXml">
+      <Column Name="FilialEmpresa" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="CGC" Type="System.String" DbType="VarChar(14) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TributacaoDocItem" Member="TributacaoDocItems">
+    <Type Name="TributacaoDocItem">
+      <Column Name="TipoDoc" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntDocItem" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Item" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Produto" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ProdutoDescricao" Type="System.String" DbType="VarChar(250) NOT NULL" CanBeNull="false" />
+      <Column Name="UnidadeMed" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Quantidade" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PrecoTotal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PrecoUnitario" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PrecoUnitarioMoeda" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DescontoGrid" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="NaturezaOp" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="TipoTributacao" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPITipo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPICodProduto" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="IPIBaseCalculo" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IPIPercRedBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IPIAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IPIValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IPICredito" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSTipo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSPercRedBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSCredito" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISCredito" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSCredito" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSAliquotaAdicaoDI" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DespImpICMSBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DespImpICMSValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="DespImpICMSCredito" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstPercRedBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstPercMVA" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISTipo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISTipoCalculo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISAliquotaValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISQtde" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISSTTipoCalculo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISSTBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISSTAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISSTAliquotaValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISSTQtde" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISSTValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSTipo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSTipoCalculo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSAliquotaValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSQtde" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSSTTipoCalculo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSSTBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSSTAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSSTAliquotaValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSSTQtde" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSSTValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CST" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="ISSQN" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="ISSBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSCidadeIBGE" Type="System.String" DbType="VarChar(7) NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IIBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IIDespAduaneira" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IIIOF" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IIValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSBaseModalidade" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstBaseModalidade" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPIEnquadramentoClasse" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="IPIEnquadramentoCodigo" Type="System.String" DbType="VarChar(3) NOT NULL" CanBeNull="false" />
+      <Column Name="IPICNPJProdutor" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" />
+      <Column Name="IPISeloCodigo" Type="System.String" DbType="VarChar(60) NOT NULL" CanBeNull="false" />
+      <Column Name="IPISeloQtde" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IPITipoCalculo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPIUnidadePadraoQtde" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IPIUnidadePadraoValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorFreteItem" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorSeguroItem" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorOutrasDespesasItem" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorDescontoItem" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="OrigemMercadoria" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ExTIPI" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Genero" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ProdutoEspecifico" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="EAN" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="EANTrib" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="QtdTrib" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="UMTrib" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="ValorUnitTrib" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="NaturezaOpManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TipoTributacaoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPITipoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPICodProdutoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPIBaseCalculoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPIPercRedBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPIAliquotaManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPIValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPICreditoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSTipoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSPercRedBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSAliquotaManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSCreditoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstAliquotaManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISCreditoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSCreditoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSAliquotaAdicaoDIManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="DespImpICMSBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="DespImpICMSValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="DespImpICMSCreditoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstPercRedBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstPercMVAManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISTipoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISTipoCalculoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISAliquotaManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISAliquotaValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISQtdeManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISSTTipoCalculoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISSTBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISSTAliquotaManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISSTAliquotaValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISSTQtdeManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISSTValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSTipoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSTipoCalculoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSAliquotaManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSAliquotaValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSQtdeManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSSTTipoCalculoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSSTBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSSTAliquotaManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSSTAliquotaValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSSTQtdeManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSSTValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CSTManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSQNManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSAliquotaManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSCidadeIBGEManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IIBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IIDespAduaneiraManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IIIOFManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IIValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSBaseModalidadeManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstBaseModalidadeManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPIEnquadramentoClasseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPIEnquadramentoCodigoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPICNPJProdutorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPISeloCodigoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPISeloQtdeManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPITipoCalculoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPIUnidadePadraoQtdeManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPIUnidadePadraoValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ValorFreteItemManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ValorSeguroItemManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ValorOutrasDespesasItemManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ValorDescontoItemManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="OrigemMercadoriaManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSTCobrAntBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSTCobrAntValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSTCobrAntBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSTCobrAntValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSPercRedBaseAdicaoDI" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSPercRedBaseAdicaoDIManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSpercBaseOperacaoPropria" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSUFDevidoST" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvBCSTRet" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvICMSSTRet" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvBCSTDest" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvICMSSTDest" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSpCredSN" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvCredSN" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSCST" Type="System.Char" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSValorIsento" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSMotivo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSimplesTipo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSTipo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSpercBaseOperacaoPropriaManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSUFDevidoSTManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvBCSTRetManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvICMSSTRetManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvBCSTDestManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvICMSSTDestManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSpCredSNManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvCredSNManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSCSTManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSValorIsentoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSMotivoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSimplesTipoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSTipoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="RegimeTributario" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CSOSN" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="NatBCCred" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="NatBCCredManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TotTrib" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribTipo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribTipoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="FCI" Type="System.String" DbType="VarChar(36) NOT NULL" CanBeNull="false" />
+      <Column Name="FCIManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMS51ValorOp" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSPercDifer" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSValorDif" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMS51ValorOpManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSPercDiferManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSValorDifManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorDeducao" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorOutrasRet" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorDescIncond" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorDescCond" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorRet" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSIndExigibilidade" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSCodServ" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="ISSMunicIncidImp" Type="System.String" DbType="VarChar(7) NOT NULL" CanBeNull="false" />
+      <Column Name="ISSCodPais" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSNumProcesso" Type="System.String" DbType="VarChar(30) NOT NULL" CanBeNull="false" />
+      <Column Name="ISSIndIncentivo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorDeducaoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorOutrasRetManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorDescIncondManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorDescCondManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorRetManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSIndExigibilidadeManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSCodServManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSMunicIncidImpManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSCodPaisManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSNumProcessoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSIndIncentivoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribAliqFederal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribAliqEstadual" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribAliqMunicipal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribAliqFederalManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribAliqEstadualManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribAliqMunicipalManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CEST" Type="System.String" DbType="VarChar(7) NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestBCUFDest" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestBCUFDestManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestPercFCPUFDest" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestPercFCPUFDestManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestAliqUFDest" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestAliqUFDestManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestPercPartilha" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestPercPartilhaManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestVlrFCPUFDest" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestVlrFCPUFDestManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestVlrUFDest" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestVlrUFDestManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestVlrUFRemet" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestVlrUFRemetManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestAliq" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestAliqManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPIVlrDevolvido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IPIVlrDevolvidoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="pDevol" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="pDevolManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestBCFCPUFDest" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestBCFCPUFDestManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvBCFCPST" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvBCFCPSTManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSpFCPST" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSpFCPSTManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvFCPST" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvFCPSTManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvBCFCPSTRet" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvBCFCPSTRetManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSpFCPSTRet" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSpFCPSTRetManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvFCPSTRet" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvFCPSTRetManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSTCobrAntAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSTCobrAntAliquotaManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvBCFCP" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvBCFCPManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSpFCP" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSpFCPManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvFCP" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSvFCPManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="cBenef" Type="System.String" DbType="VarChar(10) NOT NULL" CanBeNull="false" />
+      <Column Name="indEscala" Type="System.String" DbType="VarChar(1) NOT NULL" CanBeNull="false" />
+      <Column Name="CNPJFab" Type="System.String" DbType="VarChar(14) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TributacaoDoc" Member="TributacaoDocs">
+    <Type Name="TributacaoDoc">
+      <Column Name="TipoDoc" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="NumIntDoc" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="TaxacaoAutomatica" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TipoTributacao" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TipoTributacaoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPIBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IPIBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPIValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IPIValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSSubstValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSIncluso" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSAliquotaManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IRRFBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IRRFBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IRRFAliquota" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IRRFAliquotaManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IRRFValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IRRFValorManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CSLLRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISRetidoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSRetidoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CSLLRetidoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ISSRetido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSRetidoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISCredito" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="PISCreditoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSCredito" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSCreditoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IPICredito" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IPICreditoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSCredito" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSCreditoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ValorINSS" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ValorINSSManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="INSSRetido" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="INSSRetidoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="INSSValorBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="INSSValorBaseManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="INSSValorDeducoes" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="INSSValorDeducoesManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="NaturezaOpInterna" Type="System.String" DbType="VarChar(4)" CanBeNull="true" />
+      <Column Name="TotTrib" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribTipo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribTipoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="NaturezaOpManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PISValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="COFINSValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSValorIsento" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorDeducao" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorOutrasRet" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorDescIncond" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ISSValorDescCond" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="Destino" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="DestinoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="FinalidadeNFe" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="FinalidadeNFeManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IndConsumidorFinal" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IndConsumidorFinalManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IndPresenca" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IndPresencaManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="RegTribEspecial" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="RegTribEspecialManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="DataPrestServico" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="DataPrestServicoManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="IIValor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribFederal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribEstadual" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribMunicipal" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribFederalManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribEstadualManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TotTribMunicipalManual" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="NFImpAbateIIPrecoUnit" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestVlrFCPUFDest" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestVlrUFDest" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSInterestVlrUFRemet" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSVlrFCP" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSVlrFCPST" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ICMSVlrFCPSTRet" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="IPIVlrDevolvido" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.CondicoesPagto" Member="CondicoesPagtos">
+    <Type Name="CondicoesPagto">
+      <Column Name="Codigo" Type="System.Int16" DbType="SmallInt NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="DescReduzida" Type="System.String" DbType="VarChar(30)" CanBeNull="true" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="EmPagamento" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="EmRecebimento" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="NumeroParcelas" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DiasParaPrimeiraParcela" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IntervaloParcelas" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Mensal" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="DiaDoMes" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="AcrescimoFinanceiro" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Modificador" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="DataFixa" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CodExterno" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CargoMinimo" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="FormaPagamento" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TabelaPreco" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="TetoParcela" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Produtos" Member="Produtos">
+    <Type Name="Produto">
+      <Column Name="Codigo" Type="System.String" DbType="VarChar(20) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Tipo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Descricao" Type="System.String" DbType="VarChar(50)" CanBeNull="true" />
+      <Column Name="NomeReduzido" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Modelo" Type="System.String" DbType="VarChar(40)" CanBeNull="true" />
+      <Column Name="Gerencial" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Nivel" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Substituto1" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Substituto2" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PrazoValidade" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CodigoBarras" Type="System.String" DbType="VarChar(15)" CanBeNull="true" />
+      <Column Name="EtiquetasCodBarras" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PesoLiq" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PesoBruto" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Comprimento" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Espessura" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Largura" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Cor" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ObsFisica" Type="System.String" DbType="VarChar(500)" CanBeNull="true" />
+      <Column Name="ClasseUM" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SiglaUMEstoque" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="SiglaUMCompra" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="SiglaUMVenda" Type="System.String" DbType="VarChar(5)" CanBeNull="true" />
+      <Column Name="Ativo" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Faturamento" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Compras" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PCP" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="KitBasico" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="KitInt" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IPIAliquota" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="IPICodigo" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="IPICodDIPI" Type="System.String" DbType="VarChar(3)" CanBeNull="true" />
+      <Column Name="ISSAliquota" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ISSCodigo" Type="System.String" DbType="VarChar(10)" CanBeNull="true" />
+      <Column Name="IRIncide" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ControleEstoque" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ICMSAgregaCusto" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="IPIAgregaCusto" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="FreteAgregaCusto" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Apropriacao" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="ContaContabil" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="ContaContabilProducao" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="PercentMaisQuantCotAnt" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PercentMenosQuantCotAnt" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="ConsideraQuantCotAnt" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TemFaixaReceb" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="PercentMaisReceb" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="PercentMenosReceb" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="RecebForaFaixa" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CreditoICMS" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CreditoIPI" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Residuo" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Natureza" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="CustoReposicao" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="OrigemMercadoria" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TabelaPreco" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="TempoProducao" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Rastro" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="HorasMaquina" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="PesoEspecifico" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="Referencia" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="Figura" Type="System.String" DbType="VarChar(80)" CanBeNull="true" />
+      <Column Name="Embalagem" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="INSSPercBase" Type="System.Double" DbType="Float" CanBeNull="true" />
+      <Column Name="KitVendaComp" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="Grade" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="DataLog" Type="System.DateTime" DbType="DateTime NOT NULL" CanBeNull="false" />
+      <Column Name="UsaBalanca" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="SerieProx" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
+      <Column Name="SerieParteNum" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoNumerico" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="ExTIPI" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Genero" Type="System.String" DbType="VarChar(2) NOT NULL" CanBeNull="false" />
+      <Column Name="ISSQN" Type="System.String" DbType="VarChar(4) NOT NULL" CanBeNull="false" />
+      <Column Name="SiglaUMTrib" Type="System.String" DbType="VarChar(5) NOT NULL" CanBeNull="false" />
+      <Column Name="ProdutoEspecifico" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="PrecoMaxConsumidor" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="TipoServico" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="Fabricante" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="IPIIncide" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="QtdeEmbBase" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="FatorAjuste" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="FCI" Type="System.String" DbType="VarChar(36) NOT NULL" CanBeNull="false" />
+      <Column Name="CodigoBarrasTrib" Type="System.String" DbType="VarChar(15) NOT NULL" CanBeNull="false" />
+      <Column Name="NBS" Type="System.String" DbType="VarChar(9) NOT NULL" CanBeNull="false" />
+      <Column Name="PercComissao" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="MetaComissao" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+      <Column Name="CEST" Type="System.String" DbType="VarChar(7) NOT NULL" CanBeNull="false" />
+      <Column Name="ProdEmEscalaRelev" Type="System.Int16" DbType="SmallInt NOT NULL" CanBeNull="false" />
+      <Column Name="cProdANVISA" Type="System.String" DbType="VarChar(13) NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>
